@@ -1,6 +1,6 @@
 # 汪聪的博客
 
-![name](../docs/photo.jpg '描述')
+![name](https://github.com/AaronWangCong/vuePress-blog/blob/master/docs/photo.jpg '描述')
 
 ## 如约而至
 
