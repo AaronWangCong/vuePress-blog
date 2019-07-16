@@ -1,6 +1,6 @@
 # 汪聪的博客
 
-![name](../docs/.vuepress/photo.jpg '描述')
+![name](../docs/photo.jpg '描述')
 
 ## 如约而至
 
