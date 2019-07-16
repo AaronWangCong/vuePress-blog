@@ -63,7 +63,7 @@ _斜体_
 
   引用式
   [百度2][2]{:target="_blank"}
-  [2]: http://www.baidu.com/  "百度二下"  
+  [2]: http://www.baidu.com/  "百度二下" 
   
   邮箱链接
   <xxx@outlook.com>
