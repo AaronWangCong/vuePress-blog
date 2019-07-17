@@ -1,15 +1,3 @@
----
-sidebar: auto
----
 
-# Vue基本语法
-这里是Vue相关文档
-
-## vue-router
-```
-<div>   
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
-```
+## mpvue小程序
+微信小程序

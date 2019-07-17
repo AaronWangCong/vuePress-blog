@@ -1,8 +1,8 @@
 module.exports = {
-  title: 'Aaron的博客',
+  title: 'WC技术博文',
   description: 'wangcong\'s blog',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
-    // ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
+    ['link', { rel: 'icon', href: `/logo.jpg` }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
   host: 'blog.wangcong.wang',
   port: 1315,
@@ -19,19 +19,26 @@ module.exports = {
     ],
     sidebar: {
       '/blog/': [
-        '',     /* /foo/ */
-        ['markDown', 'MarkDown基本使用'],
-        ['wxApplet', '微信小程序']
+        ['', '一、前言'],
+        ['markDown', '二、MarkDown'],
+        ['JavaScript', '三、JavaScript'],
+        ['Jquery', '四、JQuery'],
+        ['H5C3', '五、HTML、CSS'],
+        ['wxApplet', '六、mpVue小程序'],
+        ['Vue', '七、Vue.js'],
+        ['Nuxt', '八、Nuxt.js'],
+        ['SEO', '九、SEO搜索引擎'],
+        ['optimization', '十、网站优化']
       ],
       '/': [
         '',        /* / */
       ]
     }, // 侧边栏配置
     sidebarDepth: 3, // 侧边栏显示2级
-    lastUpdated: 'Last Updated',
+    lastUpdated: '最后更新',
 
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-    repo: 'vuejs/vuepress',
+    repo: 'https://github.com/AaronWangCong/vuePress-blog.git',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: '查看源码',

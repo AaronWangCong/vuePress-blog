@@ -1,5 +1,3 @@
-# Markdown 拓展
-
 ## 常用部分
 
 ### 1.标题
@@ -185,6 +183,6 @@ Markdown[^1]
 ### 9.内嵌CSS样式
 <p style="color: #AD5D0F;font-size: 30px; font-family: '宋体';">内联样式</p>
 
-```javascript
+```html
   <p style="color: #AD5D0F;font-size: 30px; font-family: '宋体';">内联样式</p>
 ```
