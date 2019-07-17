@@ -20,15 +20,18 @@ module.exports = {
     sidebar: {
       '/blog/': [
         ['', '一、前言'],
-        ['markDown', '二、MarkDown'],
-        ['JavaScript', '三、JavaScript'],
-        ['Jquery', '四、JQuery'],
-        ['H5C3', '五、HTML、CSS'],
+        ['JavaScript', '二、JavaScript'],
+        ['Jquery', '三、JQuery'],
+        ['H5C3', '四、HTML、CSS'],
+        ['animation', '五、动画'],
         ['wxApplet', '六、mpVue小程序'],
         ['Vue', '七、Vue.js'],
         ['Nuxt', '八、Nuxt.js'],
-        ['SEO', '九、SEO搜索引擎'],
-        ['optimization', '十、网站优化']
+        ['Node', '九、Node.js'],
+        ['SEO', '十、SEO搜索引擎'],
+        ['optimization', '十一、网站优化'],
+        ['markDown', '十二、MarkDown'],
+        ['Linux', '十三、Linux'],
       ],
       '/': [
         '',        /* / */
