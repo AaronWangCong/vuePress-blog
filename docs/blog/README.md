@@ -12,14 +12,10 @@ WC技术博文是[汪聪个人门户网站](http://wangcong.wang/)的一个独�
 此页面为blog分类导航页面，下面内容都为技术博文标签导航，可直接点击到达目标文档进行查看。
 :::
 
-## MarkDown基本使用
-
-* [常用部分](../blog/markDown.md#常用部分)
-* [其他部分](../blog/markDown.md#其他部分)
-* ...
-
 ## JavaScript
 * [移动端及PC端](../blog/JavaScript.md#移动端及PC端)
+* [JS的数据处理](../blog/JavaScript.md#JS的数据处理)
+* [视频、音频播放](../blog/JavaScript.md#网页的视频、音频播放)
 
 ## HTML、CSS类
 * [媒体查询](../blog/H5C3.md#媒体查询)
@@ -31,4 +27,10 @@ WC技术博文是[汪聪个人门户网站](http://wangcong.wang/)的一个独�
 * [Vue.js](../blog/Vue.md#Vue.js)
 
 ## Nuxt.js
-* [Nuxt.js](../blog/Nuxt.md#Nuxt.js)
+* [安装](../blog/Nuxt.md#安装)
+
+## MarkDown基本使用
+
+* [常用部分](../blog/markDown.md#常用部分)
+* [其他部分](../blog/markDown.md#其他部分)
+* ...
