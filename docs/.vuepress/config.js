@@ -15,7 +15,7 @@ module.exports = {
     nav:[ // 导航栏配置
       { text: 'Home', link: '/' },
       { text: '博客', link: '/blog/' },
-      { text: '个人门户', link: 'http://wangcong.wang' }
+      { text: '个人门户', link: 'http://home.wangcong.wang' }
     ],
     sidebar: {
       '/blog/': [
