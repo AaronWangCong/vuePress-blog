@@ -24,7 +24,7 @@ module.exports = {
         ['Jquery', '三、JQuery'],
         ['H5C3', '四、HTML、CSS'],
         ['animation', '五、动画'],
-        ['wxApplet', '六、mpVue小程序'],
+        ['wxApplet', '六、小程序'],
         ['Vue', '七、Vue.js'],
         ['Nuxt', '八、Nuxt.js'],
         ['Node', '九、Node.js'],

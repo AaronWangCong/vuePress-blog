@@ -19,8 +19,10 @@ WC技术博文是[汪聪个人门户网站](http://wangcong.wang/)的一个独�
 
 ## HTML、CSS类
 * [媒体查询](../blog/H5C3.md#媒体查询)
+* [伪元素](../blog/H5C3.md#伪元素)
+* [选择器](../blog/H5C3.md#选择器)
 
-## mpvue小程序
+## 小程序
 * [mpvue小程序](../blog/wxApplet.md#mpvue小程序)
 
 ## Vue.js
