@@ -19,7 +19,7 @@ module.exports = {
     ],
     sidebar: {
       '/blog/': [
-        ['', '一、前言'],
+        ['', '一、前言及目录'],
         ['JavaScript', '二、JavaScript'],
         ['Jquery', '三、JQuery'],
         ['H5C3', '四、HTML、CSS'],

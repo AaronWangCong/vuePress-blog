@@ -1,7 +1,7 @@
-## 前言
+## 前言及目录
 
 ::: tip
-WC技术博文是[汪聪个人门户网站](http://wangcong.wang/)的一个独立子站，整个网站采用[VuePress](http://vuepress.vuejs.org/)搭建完成，支持电脑手机设备自适应，书写工具为[MarkDwon](http://markdown.cn/)。主要便于作者文档的编写及积累查看使用,**此文档主要用于知识点的收集，可能会忽略掉一些过渡，阅读文档需要前端的基础知识**。成长在于积累，长期的积累才是一个人成长最好的见证。
+WC技术博文是[汪聪个人门户网站](http://wangcong.wang/)的一个独立子站，整个网站采用[VuePress](http://vuepress.vuejs.org/)搭建完成，支持电脑手机设备自适应，书写工具为[MarkDwon](http://markdown.cn/)。主要便于作者文档的编写及积累查看使用,**此文档主要用于知识点的收集，可能会忽略掉一些过渡，阅读文档需要前端的基础知识**。*成长在于积累，长期的积累才是一个人成长最好的见证。*
 :::
 
 ## 它是如何使用查看的？
@@ -9,7 +9,7 @@ WC技术博文是[汪聪个人门户网站](http://wangcong.wang/)的一个独�
 ::: warning
 事实上，一个好的博客网站在于标准化的分类，技术博文的规范以及查阅人的观感共同形成的，这也是我选用VuePress搭建此网站的初衷。全文搜索框可输入关键字查询，或文章标题、分类标题、内容标题。
 
-此页面为blog分类导航页面，下面内容都为文档标签导航，可直接点击到达目标文档进行查看。
+*此页面为blog分类导航页面，下面内容都为文档标签导航，可直接点击到达目标文档进行查看。*
 :::
 
 ## JavaScript
@@ -26,13 +26,20 @@ WC技术博文是[汪聪个人门户网站](http://wangcong.wang/)的一个独�
 * [mpvue小程序](../blog/wxApplet.md#mpvue小程序)
 
 ## Vue.js
-* [起步](../blog/Vue.md#起步)
+* [快速开始创建项目](../blog/Vue.md#起步)
 
 ## Nuxt.js
-* [安装](../blog/Nuxt.md#安装)
+* [快速开始创建项目](../blog/Nuxt.md#安装)
 
 ## MarkDown基本使用
 
 * [常用部分](../blog/markDown.md#常用部分)
 * [其他部分](../blog/markDown.md#其他部分)
 * ...
+
+## Linux环境配置
+* [NPM 安装](../blog/Linux.md#NPM安装)
+* [cnpm 安装](../blog/Linux.md#cnpm安装)
+* [Node 安装](../blog/Linux.md#Node安装)
+* [Nginx 安装](../blog/Linux.md#Nginx安装)
+* [PM2 安装](../blog/Linux.md#PM2安装)
