@@ -96,7 +96,7 @@
         }
       }
     ```
-### 3、pm2服务器部署
+### 3、pm2服务器守护
   * `pm2` linux环境安装请看Linux目录或者戳 [pm2安装](../blog/Linux.md#PM2进程守护安装)直达。
   * `cd` 到linux项目根目录下运行
   ```sh
@@ -113,7 +113,7 @@
       pm2 stop ip/appname  // 停止项目
       pm2 show ip/appname  // 查看某个项目详细
     ```
-### 4、ngnix代理
+### 4、ngnix代理访问
   * ngnix安装环境请看Linux目录或者戳 [ngnix安装](../blog/Linux.md#Nginx安装)直达。
   * 确保nuxt项目运行成功，ngnix只是进行代理访问
   * ngnix配置，加入项目启动端口为 `3006`,访问 `sendatek.wangcong.wang` 就会被代理到3006端口，也就是项目启动端口
@@ -136,4 +136,12 @@
         # rewrite ^(.*)$ https://new.wangcong.wang; 
       }
     ```
+## 第三方js执行
+### 1、Window 或 Document 对象未定义？
+  *这是因为一些只兼容客户端的脚本被打包进了服务端的执行脚本中去。 对于只适合在客户端运行的脚本，需要通过使用 `process.client` 变量来判断导入。*
+  ```javascript
+    if (process.client) {
+      require('external_library')
+    }
+  ```
   
