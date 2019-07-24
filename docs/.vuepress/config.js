@@ -1,11 +1,11 @@
 module.exports = {
   title: 'WCA技术博文',
   keyswords: 'WCA,WCA技术博文,Aaron,AaronWangCong,wangcong,前端汪聪,vue,nuxt,node,ngnix,pm2,服务端渲染',
-  description: 'WCA技术博文是汪聪个人门户网站的一个独立子站，主要编写前端技术博文，包括vue、nuxt、javascript、服务端渲染、pm2项目守护，致力于开源一份简洁快捷的前端技术博文网站。',
+  description: 'WCA技术博文是汪聪个人门户网站的一个独立子站，包括html、CSS、vue、nuxt、javascript、小程序、pm2等技术知识，致力于开源一份简洁标准的前端技术博文网站。',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: `/photo.jpg` }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
-  host: 'blog.wangcong.wang',
+  host: 'doc.wangcong.com',
   port: 1315,
   serviceWorker: true, // 是否开启 PWA
   base: '/', // 这是部署到github相关的配置
