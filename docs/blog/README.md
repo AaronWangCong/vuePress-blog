@@ -1,7 +1,7 @@
 ## 前言及目录
 
 ::: tip
-WCA(WangCongAaron)，站长汪聪，WCA技术博文是[汪聪个人门户网站](http://wangcong.wang/)的一个独立子站，整个网站采用[VuePress](http://blog.wangcong.wang/)搭建完成，支持电脑手机设备自适应，书写工具为[MarkDwon](http://markdown.cn/)。主要用于作者博文的积累及查看使用,**此文档在于知识点的收集，可能会忽略掉一些过渡，阅读文档需要一定的基础知识**。*成长在于积累，长期的积累才是一个人成长最好的见证。*
+AWC(AaronWangCong)，站长汪聪，AWC技术博文是[汪聪个人门户网站](http://wangcong.wang/)的一个独立子站，整个网站采用[VuePress](http://blog.wangcong.wang/)搭建完成，支持电脑手机设备自适应，书写工具为[MarkDwon](http://markdown.cn/)。主要用于作者博文的积累及查看使用,**此文档在于知识点的收集，可能会忽略掉一些过渡，阅读文档需要一定的基础知识**。*成长在于积累，长期的积累才是一个人成长最好的见证。*
 :::
 
 ## 它是如何使用查看的？
@@ -24,9 +24,17 @@ WCA(WangCongAaron)，站长汪聪，WCA技术博文是[汪聪个人门户网站]
 
 ## 小程序
 * [mpvue小程序](../blog/wxApplet.md#mpvue小程序)
+  * [1 、小程序目录文件介绍](../blog/wxApplet.md#1、小程序目录文件介绍)
+  * [2、小程序开发准备](../blog/wxApplet.md#2、小程序开发准备)
+  * [3、本地开发环境搭建](../blog/wxApplet.md#3、本地开发环境搭建)
+  * [4、快速开始创建](../blog/wxApplet.md#4、快速开始创建)
+  * [5、业务开发](../blog/wxApplet.md#5、业务开发)
+  * [6、微信原生API的使用](../blog/wxApplet.md#6、微信原生API的使用)
 
 ## Vue.js
 * [快速开始创建项目](../blog/Vue.md#起步)
+* [Vuex的使用](../blog/Vue.md#Vuex)
+* [全局组件封装](../blog/Vue.md#全局组件封装)
 
 ## Nuxt.js
 * [快速开始创建项目](../blog/Nuxt.md#安装)
