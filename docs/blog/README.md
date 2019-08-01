@@ -22,6 +22,11 @@ AWC(AaronWangCong)，站长汪聪，AWC技术博文是[汪聪个人门户网站]
 * [伪元素](../blog/H5C3.md#伪元素)
 * [选择器](../blog/H5C3.md#选择器)
 
+## 动画
+* [过渡效果](../blog/animation.md#过渡效果)
+  * [1、过渡效果的实现](../blog/animation.md#1、过渡效果的实现)
+  * [2、实现线性围绕效果](../blog/animation.md#2、实现线性围绕效果)
+
 ## 小程序
 * [mpvue小程序](../blog/wxApplet.md#mpvue小程序)
   * [1 、小程序目录文件介绍](../blog/wxApplet.md#1、小程序目录文件介绍)
