@@ -46,5 +46,19 @@ module.exports = {
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: '查看源码',
-  }
+  },
+  plugins: [
+    {
+      '@vssue/vuepress-plugin-vssue': {
+        // 设置 `platform` 而不是 `api`
+        platform: 'github',
+  
+        // 其他的 Vssue 配置
+        owner: 'AaronWangCong',
+        repo: 'vuePress-blog',
+        clientId: '24eec55e1c31822a7ed1',
+        clientSecret: 'a4c27e5795f780ca67484da3f24cf0de9740dfd7',
+      },
+    }
+  ]
 };
