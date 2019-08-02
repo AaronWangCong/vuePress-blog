@@ -14,13 +14,28 @@ AWC(AaronWangCong)，站长汪聪，AWC技术博文是[汪聪个人门户网站]
 
 ## JavaScript
 * [移动端及PC端](../blog/JavaScript.md#移动端及PC端)
+  * [1、js判断环境为移动端或pc端](../blog/JavaScript.md#_1、js判断环境为移动端或pc端)
+  * [2、js判断是否为微信端](../blog/JavaScript.md#_2、js判断是否为微信端)
+  * [3、js移动端rem自动化](../blog/JavaScript.md#_3、js移动端rem自动化)
 * [JS的数据处理](../blog/JavaScript.md#JS的数据处理)
+  * [1、filter过滤器](../blog/JavaScript.md#_1、filter过滤器)
+  * [2、循环遍历对象、数组](../blog/JavaScript.md#_2、循环遍历对象、数组)
+  * [3、js保留小数位数](../blog/JavaScript.md#_3、js保留小数位数)
 * [视频、音频播放](../blog/JavaScript.md#网页的视频、音频播放)
+  * [1、H5 auto 标签](../blog/JavaScript.md#网页的视频、音频播放)
+* [js实现倒计时](../blog/JavaScript.md#js实现倒计时)
+  * [1、业务准备](../blog/JavaScript.md#_1、业务准备)
+  * [2、业务案例](../blog/JavaScript.md#_2、业务案例)
+  * [3、业务代码](../blog/JavaScript.md#_3、业务代码)
 
 ## HTML、CSS类
 * [媒体查询](../blog/H5C3.md#媒体查询)
+  * [1、使用](../blog/H5C3.md#_1、使用)
 * [伪元素](../blog/H5C3.md#伪元素)
+  * [1、伪元素实现三角标注](../blog/H5C3.md#_1、伪元素实现三角标注)
+  * [2、优化滚动条](../blog/H5C3.md#_2、优化滚动条)
 * [选择器](../blog/H5C3.md#选择器)
+  * [1、选择器](../blog/H5C3.md#_1、选择器)
 
 ## 动画
 * [过渡效果](../blog/animation.md#过渡效果)
@@ -38,7 +53,11 @@ AWC(AaronWangCong)，站长汪聪，AWC技术博文是[汪聪个人门户网站]
 
 ## Vue.js
 * [快速开始创建项目](../blog/Vue.md#起步)
-* [Vuex的使用](../blog/Vue.md#Vuex)
+  * [1、安装](../blog/Vue.md#_1、安装)
+  * [2、vue-cli构建](../blog/Vue.md#_2、vue-cli构建)
+  * [3、http请求封装](../blog/Vue.md#_3、http请求封装)
+  * [4、Vuex](../blog/Vue.md#_4、Vuex)
+  * [5、Sass在vue中的使用](../blog/Vue.md#_5、Sass在vue中的使用)
 * [全局组件封装](../blog/Vue.md#全局组件封装)
 
 ## Nuxt.js
