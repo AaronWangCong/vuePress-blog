@@ -469,3 +469,5 @@
       // 关闭
       Vue.prototype.$my_loading(false)
     ```
+
+<Vssue title="Vssue Demo" />

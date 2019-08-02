@@ -87,3 +87,5 @@
   * 显示效果
 
   ![name](../.vuepress/public/images/around.gif '描述')
+
+<Vssue title="Vssue Demo" />

@@ -343,4 +343,6 @@
       </template>
     ```
     * 如果没有授权，需要引导用户进行点击授权，将会调用` bindGetUserInfo` 事件,授权成功后可以调用` wx.login` 获取到code 用户登录凭证（有效期五分钟）
+
+<Vssue title="Vssue Demo" />
   
