@@ -3,28 +3,300 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Vue基本语法 | Aaron的博客</title>
-    <meta name="description" content="wangcong&#39;s blog">
+    <title>小程序 | AWC技术博文</title>
+    <meta name="description" content="AWC技术博文是汪聪个人门户网站的一个独立子站，包括html、CSS、vue、nuxt、javascript、小程序、pm2等技术知识，致力于开源一份简洁标准的前端技术博文网站。">
+    <link rel="icon" href="/photo.jpg">
     
-    
-    <link rel="preload" href="/assets/css/0.styles.f598ca3d.css" as="style"><link rel="preload" href="/assets/js/app.a6984c5a.js" as="script"><link rel="preload" href="/assets/js/2.673595e4.js" as="script"><link rel="preload" href="/assets/js/8.23725dfb.js" as="script"><link rel="prefetch" href="/assets/js/3.2f313d14.js"><link rel="prefetch" href="/assets/js/4.cd9f590c.js"><link rel="prefetch" href="/assets/js/5.b4adc30a.js"><link rel="prefetch" href="/assets/js/6.4e853b87.js"><link rel="prefetch" href="/assets/js/7.ebc62b95.js"><link rel="prefetch" href="/assets/js/9.cfb529d6.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.f598ca3d.css">
+    <link rel="preload" href="/assets/css/0.styles.f6d4bc1c.css" as="style"><link rel="preload" href="/assets/js/app.35605abb.js" as="script"><link rel="preload" href="/assets/js/2.b677e27a.js" as="script"><link rel="preload" href="/assets/js/3.6c3d2a31.js" as="script"><link rel="prefetch" href="/assets/js/10.5ae7e8e9.js"><link rel="prefetch" href="/assets/js/11.dd24e437.js"><link rel="prefetch" href="/assets/js/12.73695448.js"><link rel="prefetch" href="/assets/js/13.81bdc18e.js"><link rel="prefetch" href="/assets/js/14.abc93e99.js"><link rel="prefetch" href="/assets/js/15.de4ae0be.js"><link rel="prefetch" href="/assets/js/16.5000e290.js"><link rel="prefetch" href="/assets/js/17.1bd9213b.js"><link rel="prefetch" href="/assets/js/18.f1b68da9.js"><link rel="prefetch" href="/assets/js/19.12131d4d.js"><link rel="prefetch" href="/assets/js/4.d8a70fd2.js"><link rel="prefetch" href="/assets/js/5.d3a086a4.js"><link rel="prefetch" href="/assets/js/6.e013c74e.js"><link rel="prefetch" href="/assets/js/7.979b5179.js"><link rel="prefetch" href="/assets/js/8.b0f1be58.js"><link rel="prefetch" href="/assets/js/9.7238662b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f6d4bc1c.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Aaron的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">博客</a></div><div class="nav-item"><a href="http://wangcong.wang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">AWC技术博文</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">博客</a></div><div class="nav-item"><a href="http://home.wangcong.wang" target="_blank" rel="noopener noreferrer" class="nav-link external">
   个人门户
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/vuejs/vuepress" target="_blank" rel="noopener noreferrer" class="repo-link">
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/AaronWangCong/vuePress-blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
     查看源码
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">博客</a></div><div class="nav-item"><a href="http://wangcong.wang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">博客</a></div><div class="nav-item"><a href="http://home.wangcong.wang" target="_blank" rel="noopener noreferrer" class="nav-link external">
   个人门户
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/vuejs/vuepress" target="_blank" rel="noopener noreferrer" class="repo-link">
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/AaronWangCong/vuePress-blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
     查看源码
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue基本语法</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/wxApplet.html#vue-router" class="sidebar-link">vue-router</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue基本语法"><a href="#vue基本语法" aria-hidden="true" class="header-anchor">#</a> Vue基本语法</h1> <p>这里是Vue相关文档</p> <h2 id="vue-router"><a href="#vue-router" aria-hidden="true" class="header-anchor">#</a> vue-router</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;div&gt;   
-    &lt;div&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;/div&gt;
-&lt;/div&gt;
-</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">7/16/2019, 6:59:59 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.a6984c5a.js" defer></script><script src="/assets/js/2.673595e4.js" defer></script><script src="/assets/js/8.23725dfb.js" defer></script>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/blog/" class="sidebar-link">一、前言及目录</a></li><li><a href="/blog/JavaScript.html" class="sidebar-link">二、JavaScript</a></li><li><a href="/blog/Jquery.html" class="sidebar-link">三、JQuery</a></li><li><a href="/blog/H5C3.html" class="sidebar-link">四、HTML、CSS</a></li><li><a href="/blog/animation.html" class="sidebar-link">五、动画</a></li><li><a href="/blog/wxApplet.html" class="active sidebar-link">六、小程序</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/wxApplet.html#mpvue小程序" class="sidebar-link">mpvue小程序</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/wxApplet.html#_1、小程序目录文件介绍" class="sidebar-link">1、小程序目录文件介绍</a></li><li class="sidebar-sub-header"><a href="/blog/wxApplet.html#_2、小程序开发准备" class="sidebar-link">2、小程序开发准备</a></li><li class="sidebar-sub-header"><a href="/blog/wxApplet.html#_3、本地开发环境搭建" class="sidebar-link">3、本地开发环境搭建</a></li><li class="sidebar-sub-header"><a href="/blog/wxApplet.html#_4、快速开始创建" class="sidebar-link">4、快速开始创建</a></li><li class="sidebar-sub-header"><a href="/blog/wxApplet.html#_5、业务开发" class="sidebar-link">5、业务开发</a></li><li class="sidebar-sub-header"><a href="/blog/wxApplet.html#_6、微信原生api的使用" class="sidebar-link">6、微信原生API的使用</a></li></ul></li></ul></li><li><a href="/blog/Vue.html" class="sidebar-link">七、Vue.js</a></li><li><a href="/blog/Nuxt.html" class="sidebar-link">八、Nuxt.js</a></li><li><a href="/blog/Node.html" class="sidebar-link">九、Node.js</a></li><li><a href="/blog/SEO.html" class="sidebar-link">十、SEO搜索引擎</a></li><li><a href="/blog/optimization.html" class="sidebar-link">十一、网站优化</a></li><li><a href="/blog/markDown.html" class="sidebar-link">十二、MarkDown</a></li><li><a href="/blog/Linux.html" class="sidebar-link">十三、Linux</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="小程序"><a href="#小程序" aria-hidden="true" class="header-anchor">#</a> 小程序</h1> <div class="tip custom-block"><p>微信小程序是腾讯开放平台的一款快应用，快速开发，快速应用。有业务就有需求，需要快速进入开发，有前路人照亮道路，不用盲目开路，这里是根据简书一斤代码大佬的博客而来，先从小程序原生项目介绍 。</p></div> <h2 id="mpvue小程序"><a href="#mpvue小程序" aria-hidden="true" class="header-anchor">#</a> mpvue小程序</h2> <p><em>前段时间，美团开源了 <code>mpvue</code> 这个项目，<code>mpvue</code> 是一款基于 <code>vue.js</code> 的开发框架，使用vue的模式去开发项目将会自动编译成微信小程序所需要的项目文件。这使得我们又多了一种用来开发小程序的框架选项。由于mpvue框架是完全基于Vue框架的（重写了其<code>runtime</code> 和<code>compiler</code> ），因此在用法上面是高度和Vue一致的（某些功能由于受限于小程序环境本身的原因而不能使用），这给使用过Vue开发Web应用的前端开发者提供了极低的切换门槛来开发小程序。</em></p> <h3 id="_1、小程序目录文件介绍"><a href="#_1、小程序目录文件介绍" aria-hidden="true" class="header-anchor">#</a> 1、小程序目录文件介绍</h3> <p><img src="/assets/img/mpvue01.3b436eb1.png" alt="name" title="描述"></p> <h3 id="_2、小程序开发准备"><a href="#_2、小程序开发准备" aria-hidden="true" class="header-anchor">#</a> 2、小程序开发准备</h3> <p>微信公众平台注册小程序：<a href="https://mp.weixin.qq.com/" target="_blank" rel="noopener noreferrer">https://mp.weixin.qq.com/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="_3、本地开发环境搭建"><a href="#_3、本地开发环境搭建" aria-hidden="true" class="header-anchor">#</a> 3、本地开发环境搭建</h3> <ul><li><p>node.js 请戳<a href="/blog/Linux.html#Node安装">Node 安装</a></p></li> <li><p><code>vue-cli</code> 是一个vue专用的项目脚手架工具，可以用于方便的创建vue项目骨架代码，包括我们要讲到的mpvue的项目代码。我们可以通过安装node.js后里面包含的npm工具来安装vue-cli，在命令行输入如下命令：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>  <span class="token function">npm</span> <span class="token function">install</span> vue-cli -g
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>  vue
+
+  // 成功的话会输出如下内容：
+  // Usage: vue <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span>
+  //
+  // Options:
+  //
+  //    -V, --version  output the version number
+  //    -h, --help     output usage information
+  //
+  // Commands:
+  //
+  //    init           generate a new project from a template
+  //    list           list available official templates
+  //    build          prototype a new project
+  //    create         <span class="token punctuation">(</span>for v3 warning only<span class="token punctuation">)</span>
+  //    <span class="token function">help</span> <span class="token punctuation">[</span>cmd<span class="token punctuation">]</span>     display <span class="token function">help</span> <span class="token keyword">for</span> <span class="token punctuation">[</span>cmd<span class="token punctuation">]</span>
+</code></pre></div></li> <li><p>微信开发者工具</p> <ul><li>这个工具是开发、调试和模拟运行微信小程序的最核心的工具了，所以必须安装。
+<em>下载地址：<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener noreferrer">直达<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></em></li></ul></li> <li><p>Visual Studio Code + Vetur</p> <p><em>Visual Studio Code（简称vscode）是现在非常流行的一个轻量级代码编辑器，拥有非常多好用的辅助开发插件，在我的文章中我都会使用这个编辑器来编辑代码。当然，好用的代码编辑器有很多，比如Sublime Text、WebStorm等，同样可以达到我们的开发目的，你也尽管用你自己最喜欢的代码编辑器来写代码就行了。</em>
+下载地址：<a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+安装完vscode后，在它的插件管理器中，查找<code>Vetur</code> 并安装，然后重启一下vscode后，插件即生效:
+<img src="/assets/img/mpvue02.26e731ee.png" alt="name" title="描述"></p></li></ul> <h3 id="_4、快速开始创建"><a href="#_4、快速开始创建" aria-hidden="true" class="header-anchor">#</a> 4、快速开始创建</h3> <ul><li>这里使用vue-cli脚手架搭建目录<div class="language-sh extra-class"><pre class="language-sh"><code>  vue init mpvue/mpvue-quickstart myDelivery
+</code></pre></div><img src="/assets/img/mpvue03.90250233.png" alt="name" title="描述"> <img src="/assets/img/mpvue04.461666d3.png" alt="name" title="描述"></li> <li>创建命令可以全部默认一路回车即可，创建完成后进入项目目录</li> <li>在目录内打开命令行工具，输入<code>cnpm i</code>  或者 <code>npm i</code> 安装依赖<div class="language-sh extra-class"><pre class="language-sh"><code>  cnpm i
+</code></pre></div></li> <li>安装完依赖后再输入<code>npm run dev</code> 运行项目,会自动生成 <code>dist</code> 文件夹，这个就是小程序的真正运行代码.</li> <li>然后把下载好的微信开发者工具打开，打开mydelivery目录
+<img src="/assets/img/mpvue05.e189a800.png" alt="name" title="描述"> <img src="/assets/img/mpvue06.55855a2d.png" alt="name" title="描述"> <img src="/assets/img/mpvue07.ad5f8294.png" alt="name" title="描述"></li> <li>这样微信小程序就运行在了开发工具中。但是我们不使用它自带的编辑器，因为我们是使用mpvue开发，所以使用vscode或者其他开发工具打开项目文件。
+<img src="/assets/img/mpvue08.579b55e1.png" alt="name" title="描述"></li> <li>记得在微信开发者工具的菜单》设置 》编辑设置 中，将“保存时自动编译小程序”勾选上，这样当mpvue的代码自动编译完成后，模拟器才会自动刷新界面。
+<img src="/assets/img/mpvue09.4d60e058.png" alt="name" title="描述"></li></ul> <h3 id="_5、业务开发"><a href="#_5、业务开发" aria-hidden="true" class="header-anchor">#</a> 5、业务开发</h3> <ul><li>我们整理目录结构成适合自己的开发方式，这里继续沿用vue+vuex开发模式</li> <li>其中<code>project.config.json</code> 文件是用于管理微信开发者工具的小程序项目的配置文件，其中记录了小程序的appid、代码主目录、以及编译选项等等信息，在微信开发者工具中导入小程序项目的时候主要是通过该配置文件读取和写入配置信息。</li> <li>程序入口,微信原生开发入口有三个重要文件
+<ul><li>app.json</li> <li>app.js</li> <li>index.vue</li></ul></li> <li>app.json
+<ul><li>app.json是小程序的全局配置文件，其包含了小程序的页面文件路径配置、窗口的全局样式信息、底部选项卡式菜单栏的配置，以及一些小程序网络超时的配置等等。</li> <li>在mpvue项目文件中对应的文件就是src/main.js，我们可以在这里进行配置。<div class="language-json extra-class"><pre class="language-json"><code>  <span class="token punctuation">{</span>
+  <span class="token property">&quot;pages&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;pages/index/main&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;pages/logs/main&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;pages/counter/main&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;pages/moviesDetail/main&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;pages/citySelect/main&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;pages/search/main&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;window&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;backgroundTextStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;light&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;navigationBarBackgroundColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#fff&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;navigationBarTitleText&quot;</span><span class="token operator">:</span> <span class="token string">&quot;WeChat&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;navigationBarTextStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;black&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;tabBar&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#999&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;backgroundColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#fafafa&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;selectedColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#333&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;borderStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;white&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;首页&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;pagePath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pages/index/main&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;iconPath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;static/tabs/home.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;selectedIconPath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;static/tabs/home-active.png&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;订单&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;pagePath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pages/logs/main&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;iconPath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;static/tabs/orders.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;selectedIconPath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;static/tabs/orders-active.png&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bottom&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li></ul></li> <li>app.js
+<ul><li><code>app.js</code> 中包含了小程序的各种原生生命周期方法，如onLaunch、onShow等等。而在mpvue中，它使用了一个简单的Vue组件<code>App.vue</code> 来实现等价的功能。我们在这个App.vue组件中可以编写小程序的生命周期方法（通常使用Vue的生命周期方法，但也兼容原生的生命周期方法），也可以在其中加入小程序的全局样式（等价于原生方式下的<code>app.wxss</code><div class="language-vue extra-class"><pre class="language-vue"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">created</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 调用API从本地缓存中获取数据</span>
+      <span class="token comment">/*
+      * 平台 api 差异的处理方式:  api 方法统一挂载到 mpvue 名称空间, 平台判断通过 mpvuePlatform 特征字符串
+      * 微信：mpvue === wx, mpvuePlatform === 'wx'
+      * 头条：mpvue === tt, mpvuePlatform === 'tt'
+      * 百度：mpvue === swan, mpvuePlatform === 'swan'
+      * 支付宝(蚂蚁)：mpvue === my, mpvuePlatform === 'my'
+      */</span>
+
+      <span class="token keyword">let</span> logs
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>mpvuePlatform <span class="token operator">===</span> <span class="token string">'my'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        logs <span class="token operator">=</span> mpvue<span class="token punctuation">.</span><span class="token function">getStorageSync</span><span class="token punctuation">(</span><span class="token punctuation">{</span>key<span class="token punctuation">:</span> <span class="token string">'logs'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span>data <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        logs<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span>Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        mpvue<span class="token punctuation">.</span><span class="token function">setStorageSync</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          key<span class="token punctuation">:</span> <span class="token string">'logs'</span><span class="token punctuation">,</span>
+          data<span class="token punctuation">:</span> logs
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        logs <span class="token operator">=</span> mpvue<span class="token punctuation">.</span><span class="token function">getStorageSync</span><span class="token punctuation">(</span><span class="token string">'logs'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        logs<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span>Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        mpvue<span class="token punctuation">.</span><span class="token function">setStorageSync</span><span class="token punctuation">(</span><span class="token string">'logs'</span><span class="token punctuation">,</span> logs<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">log</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`log at:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">.container</span> <span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">flex-direction</span><span class="token punctuation">:</span> column<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">justify-content</span><span class="token punctuation">:</span> space-between<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 200rpx 0<span class="token punctuation">;</span>
+    <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">body</span><span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #eeeeee<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">/* this rule will be remove */</span>
+  <span class="token selector">*</span> <span class="token punctuation">{</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> width 2s<span class="token punctuation">;</span>
+    <span class="token property">-moz-transition</span><span class="token punctuation">:</span> width 2s<span class="token punctuation">;</span>
+    <span class="token property">-webkit-transition</span><span class="token punctuation">:</span> width 2s<span class="token punctuation">;</span>
+    <span class="token property">-o-transition</span><span class="token punctuation">:</span> width 2s<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></li> <li>接着，这个App.vue组件被src/main.js引入并被设置了一个mpType的属性值，其值为app。这个值是为了与后面要讲的小程序页面组件所区分开来，因为小程序页面组件和这个App.vue组件的写法和引入方式是一致的，为了区分两者，需要设置mpType值。引入这个App.vue组件后，会用它作为参数来创建一个Vue的实例，并调用$mount()方法加载。下面是这个过程的关键代码行<div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+  <span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App'</span>
+  <span class="token keyword">import</span> <span class="token punctuation">{</span> openWin<span class="token punctuation">,</span> redirectTo<span class="token punctuation">,</span> backBeaforWin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./utils/common'</span>
+  <span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'./store'</span>
+  <span class="token keyword">import</span> <span class="token string">'./scss/common.scss'</span>
+
+  <span class="token comment">// 把通用方法挂载到Vue原型上</span>
+  <span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$openWin <span class="token operator">=</span> openWin
+  <span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$redirectTo <span class="token operator">=</span> redirectTo
+  <span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$backBeaforWin <span class="token operator">=</span> backBeaforWin
+  <span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$store <span class="token operator">=</span> store
+
+  Vue<span class="token punctuation">.</span>config<span class="token punctuation">.</span>productionTip <span class="token operator">=</span> <span class="token boolean">false</span>
+  App<span class="token punctuation">.</span>mpType <span class="token operator">=</span> <span class="token string">'app'</span>
+
+  <span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>
+  app<span class="token punctuation">.</span><span class="token function">$mount</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></li></ul></li> <li>首页及其他页面
+<ul><li>每个小程序都至少需要一个页面，而每个页面都需要占用一个目录，包含两个必须文件，一个用于实现主体的<code>.vue</code> 文件和一个将这个页面生成Vue实例并加载的<code>main.js</code> 文件。后面的所有mpvue页面都需要包含这两个文件。另外一个<code>main.json</code> 属于配置文件，配置页面相关熟悉及引入ui组件。</li> <li>main.js<div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+  <span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./index'</span>
+
+  <span class="token comment">// add this to handle exception</span>
+  Vue<span class="token punctuation">.</span>config<span class="token punctuation">.</span><span class="token function-variable function">errorHandler</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>console <span class="token operator">&amp;&amp;</span> console<span class="token punctuation">.</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>
+  app<span class="token punctuation">.</span><span class="token function">$mount</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></li> <li>main.json<div class="language-json extra-class"><pre class="language-json"><code>  <span class="token punctuation">{</span>
+    <span class="token property">&quot;navigationBarTitleText&quot;</span><span class="token operator">:</span> <span class="token string">&quot;汪聪的电影推荐&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;usingComponents&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;i-badge&quot;</span><span class="token operator">:</span> <span class="token string">&quot;../../../static/iview/badge/index&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;i-input&quot;</span><span class="token operator">:</span> <span class="token string">&quot;../../../static/iview/input/index&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;i-icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;../../../static/iview/icon/index&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;i-sticky&quot;</span><span class="token operator">:</span> <span class="token string">&quot;../../../static/iview/sticky/index&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;i-sticky-item&quot;</span><span class="token operator">:</span> <span class="token string">&quot;../../../static/iview/sticky-item/index&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;i-notice-bar&quot;</span><span class="token operator">:</span> <span class="token string">&quot;../../../static/iview/notice-bar/index&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div></li> <li>index.vue<div class="language-vue extra-class"><pre class="language-vue"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>counter-warp<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Vuex counter：{{ count }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>increment<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>decrement<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token comment">// Use Vuex</span>
+  <span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'./store'</span>
+
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">count</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>count
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">increment</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">decrement</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'decrement'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">.counter-warp</span> <span class="token punctuation">{</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.home</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 100px auto<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 5px 10px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid blue<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></li></ul></li></ul> <h3 id="_6、微信原生api的使用"><a href="#_6、微信原生api的使用" aria-hidden="true" class="header-anchor">#</a> 6、微信原生API的使用</h3> <ul><li>开发微信小程序对应的就离不开使用微定义的api进行开发，这里使用获取用户授权及用户信息为例。<div class="language-javascript extra-class"><pre class="language-javascript"><code>  wx<span class="token punctuation">.</span><span class="token function">getSetting</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>authSetting<span class="token punctuation">)</span>
+      <span class="token comment">// res.authSetting = {</span>
+      <span class="token comment">//   &quot;scope.userInfo&quot;: true,</span>
+      <span class="token comment">//   &quot;scope.userLocation&quot;: true</span>
+      <span class="token comment">// }</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></li> <li>首先判断用户是否授权，使用<code>wx.getSetting</code>，而在mpvue中我们需要这么处理。在vue中methods内定义一个函数<code>getSetting</code>，其中调用微信的api，然后在生命周期<code>onShow</code>中进行调用。这样当用户访问就会执行微信api判断是否已经授权。<div class="language-vue extra-class"><pre class="language-vue"><code>  export default {
+    methods: {
+      getSetting() {
+        wx.getSetting({
+          success(res) {
+            if (res.authSetting[&quot;scope.userInfo&quot;]) {
+              that.loginVisible = false
+              // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+              wx.getUserInfo({
+                success: function(e) {
+                  console.log(&quot;已授权获取用户信息&quot;, e);
+                  that.setUserInfo(e);
+                  wx.login({
+                    success(res) {
+                      if (res.code) {
+                        console.log(&quot;获取登录凭证&quot;, res.code);
+                        that.loginForm.city = e.userInfo.city
+                        that.loginForm.code = res.code
+                        that.loginForm.nickName = e.userInfo.nickName
+                        console.log('用户资料语言', e.userInfo.language, '默认语言', that.$i18n.locale)
+                        if (e.userInfo.language === 'zh_CN' || e.userInfo.language === 'en') {
+                          that.setLanguage(e.userInfo.language)
+                          that.$i18n.locale = e.userInfo.language
+                        } else {
+                          console.log('其他语言，默认使用en')
+                          that.setLanguage('en')
+                          that.$i18n.locale = 'en'
+                        }
+                        // 发起网络请求
+                        that.loginWx({
+                          city: e.userInfo.city,
+                          code: res.code,
+                          nickName: e.userInfo.nickName
+                        });
+                      } else {
+                        console.log(&quot;登录失败！&quot; + res.errMsg);
+                      }
+                    }
+                  });
+                }
+              });
+            } else {
+              that.loginVisible = true
+            }
+          }
+        });
+      }
+    },
+    onShow() {
+      this.getSetting()
+    }
+  }
+</code></pre></div></li> <li><code>wx.authorize</code> 会调用弹窗进行授权，如果授权就不会弹窗并且执行<code>wx.getUserInfo</code> 请求用户信息。如果没有授权就会调用<code>wx.authorize</code> 跳出授权页面。</li> <li><em>根据最新api显示，getUserInfo将不会弹窗授权窗口，需要开发人员进行引导设置。官方建立使用button点击授权。</em><div class="language-vue extra-class"><pre class="language-vue"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>bottom<span class="token punctuation">'</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>primary<span class="token punctuation">'</span></span> <span class="token attr-name">open-type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>getUserInfo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>zh_CN<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@getuserinfo</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bindGetUserInfo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>getUserInfoClick<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        授权登录
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>如果没有授权，需要引导用户进行点击授权，将会调用<code>bindGetUserInfo</code> 事件,授权成功后可以调用<code>wx.login</code> 获取到code 用户登录凭证（有效期五分钟）</li></ul></li></ul> <h1 id="既然大侠光临，不如留一手评论"><a href="#既然大侠光临，不如留一手评论" aria-hidden="true" class="header-anchor">#</a> 既然大侠光临，不如留一手评论</h1> <!----></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新: </span> <span class="time">8/2/2019, 2:40:21 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/animation.html" class="prev">
+          五、动画
+        </a></span> <span class="next"><a href="/blog/Vue.html">
+          七、Vue.js
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.35605abb.js" defer></script><script src="/assets/js/2.b677e27a.js" defer></script><script src="/assets/js/3.6c3d2a31.js" defer></script>
   </body>
 </html>

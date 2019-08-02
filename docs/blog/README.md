@@ -10,6 +10,8 @@ AWC(AaronWangCong)，站长汪聪，AWC技术博文是[汪聪个人门户网站]
 事实上，一个好的博客网站在于标准化的分类，技术博文的规范以及查阅人的观感共同形成的，这也是我选用VuePress搭建此网站的初衷。搜索框可输入关键字或文章标题、分类标题、内容标题等查询。
 
 *此页面为blog分类导航页面，下面内容都为文档标签导航，可直接点击到达目标文档进行查看。*
+
+**已支持 GitHub 用户评论**
 :::
 
 ## JavaScript
@@ -75,5 +77,6 @@ AWC(AaronWangCong)，站长汪聪，AWC技术博文是[汪聪个人门户网站]
 * [Node 安装](../blog/Linux.md#Node安装)
 * [Nginx 安装](../blog/Linux.md#Nginx安装)
 * [PM2 安装](../blog/Linux.md#PM2安装)
+# 既然大侠光临，不如留一手评论
 
 <Vssue title="Vssue Demo" />
