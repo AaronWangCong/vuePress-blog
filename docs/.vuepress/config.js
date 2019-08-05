@@ -46,6 +46,14 @@ module.exports = {
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: '查看源码',
+    serviceWorker: {
+      updatePopup: true, // Boolean | Object, 默认值是 undefined.
+      // 如果设置为 true, 默认的文本配置将是: 
+      updatePopup: { 
+         message: "有新内容更新，是否刷新", 
+         buttonText: "刷新" 
+      }
+    }
   },
   plugins: {
     '@vssue/vuepress-plugin-vssue': {

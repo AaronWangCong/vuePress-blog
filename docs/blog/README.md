@@ -35,7 +35,7 @@ AWC(AaronWangCong)，站长汪聪，AWC技术博文是[汪聪个人门户网站]
 * [jQuery元素选择器和属性选择器](../blog/JavaScript.md#jQuery元素选择器和属性选择器)
   * [1、jQuery元素选择器](../blog/JavaScript.md#1、jQuery元素选择器)
   * [2、jQuery属性选择器](../blog/JavaScript.md#2、jQuery属性选择器)
-  * [3、CSS选择器](../blog/JavaScript.md#3、jQueryCSS选择器)
+  * [3、jQueryCSS选择器](../blog/JavaScript.md#3、jQueryCSS选择器)
   * [4、jquery选择器的参考手册](../blog/JavaScript.md#4、jquery选择器的参考手册)
 * [jQuery事件函数](../blog/JavaScript.md#jQuery事件函数)
   * [1、jQuery的显示及隐藏](../blog/JavaScript.md#1、jQuery的显示及隐藏)
