@@ -469,6 +469,29 @@
       // 关闭
       Vue.prototype.$my_loading(false)
     ```
+## select中change事件拿到其他值
+  ### 1、业务需求
+  * 有时候前台数据或者后台接口需要回传选中的其他字段，v-modal只能拿到一个值，并不能满足。
+  ### 2、实现
+  ```vue
+    <template>
+      <el-select v-model="testInfo.id" filterable clearable placeholder="请选择派送商" size="mini" @change="selectChange">
+        <el-option v-for="item in list" :key="item.id"   :label="item.showName" :value="item.id">
+          <span>{{item.showName}}</span>
+        </el-option>
+      </el-select>
+    </template>
+    <script>
+      export default {
+        methods: {
+          selectChange(val) {
+            let obj= this.list.find(i =>i.id === val)
+            // obj.showName   obj就是对应id的对象，这里可以拿到对象的任何值
+          }
+        }
+      }
+    </script>
+  ```
 # 既然大侠光临，不如留一手评论
 
 <Vssue title="Vssue Demo" />

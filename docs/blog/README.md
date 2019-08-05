@@ -61,6 +61,9 @@ AWC(AaronWangCong)，站长汪聪，AWC技术博文是[汪聪个人门户网站]
   * [4、Vuex](../blog/Vue.md#_4、Vuex)
   * [5、Sass在vue中的使用](../blog/Vue.md#_5、Sass在vue中的使用)
 * [全局组件封装](../blog/Vue.md#全局组件封装)
+* [select中change事件拿到其他值](../blog/Vue.md#select中change事件拿到其他值)
+  * [1、业务需求](../blog/Vue.md#select中change事件拿到其他值)
+  * [2、实现](../blog/Vue.md#select中change事件拿到其他值)
 
 ## Nuxt.js
 * [快速开始创建项目](../blog/Nuxt.md#安装)
