@@ -29,6 +29,18 @@ AWC(AaronWangCong)，站长汪聪，AWC技术博文是[汪聪个人门户网站]
   * [1、业务准备](../blog/JavaScript.md#_1、业务准备)
   * [2、业务案例](../blog/JavaScript.md#_2、业务案例)
   * [3、业务代码](../blog/JavaScript.md#_3、业务代码)
+## Jquery
+* [文档就绪函数](../blog/JavaScript.md#文档就绪函数)
+  * [1、执行顺序ready](../blog/JavaScript.md#1、执行顺序ready)
+* [jQuery元素选择器和属性选择器](../blog/JavaScript.md#jQuery元素选择器和属性选择器)
+  * [1、jQuery元素选择器](../blog/JavaScript.md#1、jQuery元素选择器)
+  * [2、jQuery属性选择器](../blog/JavaScript.md#2、jQuery属性选择器)
+  * [3、CSS选择器](../blog/JavaScript.md#3、jQueryCSS选择器)
+  * [4、jquery选择器的参考手册](../blog/JavaScript.md#4、jquery选择器的参考手册)
+* [jQuery事件函数](../blog/JavaScript.md#jQuery事件函数)
+  * [1、jQuery的显示及隐藏](../blog/JavaScript.md#1、jQuery的显示及隐藏)
+  * [2、jQuery淡入淡出方法](../blog/JavaScript.md#2、jQuery淡入淡出方法)
+  * [3、jQuery滑动方法](../blog/JavaScript.md#3、jQuery滑动方法)
 
 ## HTML、CSS类
 * [媒体查询](../blog/H5C3.md#媒体查询)
