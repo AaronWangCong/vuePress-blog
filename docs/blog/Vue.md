@@ -492,6 +492,77 @@
       }
     </script>
   ```
+## vue刷新页面方式
+  ### 1、router方式
+  * 这种方法页面会一瞬间的白屏，体验不是很好，虽然只是一行代码的事
+  ```vue
+    this.$router.go(0)
+  ```
+  
+  ### 2、location方式
+  * 这种也是一样，画面一闪，效果总不是很好
+  ```vue
+    this.$router.go(0)
+  ```
+  ### 3、跳转空白页再跳回原页面
+  * 在需要页面刷新的地方写上：`this.$router.push('/emptyPage')`，跳转到一个空白页。在emptyPage.vue里beforeRouteEnter 钩子里控制页面跳转，从而达到刷新的效果
+  * 这种画面虽不会一闪，但是能看见路由快速变化。
+  ```vue
+    beforeRouteEnter (to, from, next) {
+      next(vm => {
+        vm.$router.replace(from.path)
+      })
+    }
+  ```
+  ### 4、控制`<router-view>`的显示隐藏
+  * 默认`<router-view v-if="isRouterAlive" />`isRouterAlive肯定是true，在需要刷新的时候把这个值设为false，接着再重新设为true：
+  ```vue
+    <template>
+      <div id="app">
+        <router-view v-if="isRouterAlive"></router-view>
+        </div>
+    </template>
+
+    <script>
+      export default{
+        provide() {
+          return{
+            reload: this.reload
+          }
+        },
+        data () {
+          return {
+            isRouterAlive:true  
+          }
+        },
+        methods: {
+          reload() {
+            this.isRouterAlive = false
+            let that = this
+            this.$nextTick(() => {
+              that.isRouterAlive = true
+            })
+          }
+        }
+      }
+    </script>
+  ```
+  * 使用
+  ```vue
+    <script>
+      export default{
+        inject: ['reload'],
+        data () {
+          return {
+          }
+        },
+        methods: {
+          // 直接调用
+        }
+      }
+    </script>
+  ```
+  
 # 既然大侠光临，不如留一手评论
 
 <Vssue title="Vssue Demo" />

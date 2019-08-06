@@ -76,6 +76,11 @@ AWC(AaronWangCong)，站长汪聪，AWC技术博文是[汪聪个人门户网站]
 * [select中change事件拿到其他值](../blog/Vue.md#select中change事件拿到其他值)
   * [1、业务需求](../blog/Vue.md#select中change事件拿到其他值)
   * [2、实现](../blog/Vue.md#select中change事件拿到其他值)
+* [vue刷新页面方式](../blog/Vue.md#vue刷新页面方式)
+  * [1、router方式](../blog/Vue.md#vue刷新页面方式)
+  * [2、location.reload](../blog/Vue.md#vue刷新页面方式)
+  * [3、跳转空白页再跳回原页面](../blog/Vue.md#vue刷新页面方式)
+  * [4、控制`<router-view>`的显示隐藏](../blog/Vue.md#vue刷新页面方式)
 
 ## Nuxt.js
 * [快速开始创建项目](../blog/Nuxt.md#安装)
