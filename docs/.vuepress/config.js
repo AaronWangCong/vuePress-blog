@@ -29,10 +29,11 @@ module.exports = {
         ['Vue', '七、Vue.js'],
         ['Nuxt', '八、Nuxt.js'],
         ['Node', '九、Node.js'],
-        ['SEO', '十、SEO搜索引擎'],
-        ['optimization', '十一、网站优化'],
-        ['markDown', '十二、MarkDown'],
-        ['Linux', '十三、Linux'],
+        ['WorldPress', '十、WorldPress'],
+        ['SEO', '十一、SEO搜索引擎'],
+        ['optimization', '十二、网站优化'],
+        ['markDown', '十三、MarkDown'],
+        ['Linux', '十四、Linux'],
       ],
       '/': [
         '',        /* / */
