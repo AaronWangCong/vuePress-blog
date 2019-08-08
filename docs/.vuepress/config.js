@@ -34,6 +34,7 @@ module.exports = {
         ['optimization', '十二、网站优化'],
         ['markDown', '十三、MarkDown'],
         ['Linux', '十四、Linux'],
+        ['deploy', '十五、部署'],
       ],
       '/': [
         '',        /* / */
