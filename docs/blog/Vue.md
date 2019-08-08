@@ -562,7 +562,201 @@
       }
     </script>
   ```
-  
+## Eslint代码格式化
+  ### 1、vue代码片段
+  ```vue
+    "<template>",
+    "	<div class=\" \">",
+    "	</div>",
+    "</template>",
+    "<script>",
+    "export default {",
+    "	name: '',",
+    "	components: {},",
+    "	props: {},",
+    "	data () {",
+    "		return {}",
+    "	},",
+    "	computed: {},",
+    "	created () {},",
+    "	mounted () {},",
+    "	methods: {}",
+    "}",
+    "</script>",
+    "<style lang=\"scss\">",
+    "</style>"
+  ```
+
+## vue自定义组件的v-modal
+  * 一个组件上的 `v-model` 默认会利用名为 `value` 的 `prop` 和名为 `input` 的事件，但是像单选框、复选框等类型的输入控件可能会将 `value` 特性用于不同的目的。
+  * `model` 选项可以用来避免这样的冲突
+  ### 1、子组件A.vue
+  ```vue
+    <template>
+      <div>
+        <input :value="value" @change="inputChange">
+      </div>
+    </template>
+
+    <script>
+    export default {
+      props: {
+        value: {
+          type: String,
+          required: false
+        }
+      },
+      model: {
+        prop: 'value', // 注意，是prop
+        event: 'valueChange'
+      },
+      data () {
+        return {
+        };
+      },
+      mounted () {
+      },
+      methods: {
+        inputChange () {
+          this.$emit('valueChange', this.value)
+        }
+      }
+    };
+    </script>
+  ```
+  ### 2、父组件B.vue
+  ```vue
+    <template>
+      <div>
+        <B v-modal="inputVal" />
+        <el-button type="danger" @click="getVal">拿到值</el-button>
+      </div>
+    </template>
+
+    <script>
+    import B from '../components/B.vue'
+    export default {
+      data () {
+        return {
+          inputVal: ''
+        };
+      },
+      components: {
+        B
+      },
+      mounted () {
+      },
+      methods: {
+        getVal () {
+          console.log(this.inputVal)  // 可同步拿到值
+        }
+      }
+    };
+    </script>
+  ```
+## vue富文本编辑器
+  ### 1、vue-quill-editor安装
+  ```sh
+    npm install vue-quill-editor -S
+    npm install quill -S
+  ```
+  ### 2、vue-quill-editor引入
+  * 在main.js中进行引入
+  ```javascript
+    import Vue from 'vue'
+    import VueQuillEditor from 'vue-quill-editor'
+    import 'quill/dist/quill.core.css'
+    import 'quill/dist/quill.snow.css'
+    import 'quill/dist/quill.bubble.css'
+      
+    Vue.use(VueQuillEditor)
+  ```
+  ### 3、vue-quill-editor组件
+  * 这里使用了v-modal自定义组件
+  ```vue
+    <template>
+      <div class="productEditQuill-wrap">
+        <quill-editor
+          v-model="content"
+          ref="myQuillEditor"
+          :options="editorOption"
+          @blur="onEditorBlur($event)" @focus="onEditorFocus($event)"
+          @change="onEditorChange($event)">
+        </quill-editor>
+      </div>
+    </template>
+    <script>
+    export default {
+      name: "",
+      components: {},
+      props: {
+        contentVal: {
+          type: String,
+          required: false,
+          default: ``
+        },
+        editorOption: {
+          type: Object,
+          required: false,
+          default: () => {}
+        }
+      },
+      model: {
+        prop: 'contentVal', // 注意，是prop
+        event: 'valueChange'
+      },
+      data () {
+        return {
+          content: ``
+        };
+      },
+      computed: {
+        editor () {
+          return this.$refs.myQuillEditor.quill;
+        }
+      },
+      created () {},
+      mounted () {},
+      methods: {
+        onEditorReady (editor) {
+          // 准备编辑器
+        },
+        onEditorBlur () {
+          this.$emit('valueChange', this.content)
+        }, // 失去焦点事件
+        onEditorFocus () {
+          this.$emit('valueChange', this.content)
+        }, // 获得焦点事件
+        onEditorChange () {
+          this.$emit('valueChange', this.content)
+        } // 内容改变事件
+      }
+    };
+    </script>
+    <style lang="scss">
+    </style>
+  ```
+  ### 4、vue-quill-editor使用
+  ```vue
+    <template>
+      <div>
+        <productEditQuill v-model="editContent" />
+      </div>
+    </template>
+    <script>
+      import productEditQuill from '../components/productEdit/productEditQuill'
+      export default {
+        components: {
+          productEditQuill
+        },
+        data () {
+          return {
+            editContent: ``
+          }
+        }
+      }
+    </script>
+  ```
 # 既然大侠光临，不如留一手评论
 
 <Vssue title="Vssue Demo" />
