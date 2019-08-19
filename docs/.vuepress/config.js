@@ -16,7 +16,7 @@ module.exports = {
     nav:[ // 导航栏配置
       { text: 'Home', link: '/' },
       { text: '博客', link: '/blog/' },
-      { text: '个人门户', link: 'http://home.wangcong.wang' }
+      { text: '个人门户', link: 'http://blog.wangcong.wang' }
     ],
     sidebar: {
       '/blog/': [
@@ -34,7 +34,7 @@ module.exports = {
         ['optimization', '十二、网站优化'],
         ['markDown', '十三、MarkDown'],
         ['Linux', '十四、Linux'],
-        ['deploy', '十五、部署'],
+        ['deploy', '十五、部署']
       ],
       '/': [
         '',        /* / */
