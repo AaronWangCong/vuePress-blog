@@ -471,6 +471,23 @@
     }
     </style>
   ```
+## js监听滚动及回到底部
+### 1、滚动监听
+```javascript
+  let bodyScrollHeight = document.body.scrollHeight || document.documentElement.scrollHeight;
+  let windowHeight = document.documentElement.clientHeight || document.body.clientHeight;
+  window.addEventListener('scroll', function () {
+    let scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrolltop + windowHeight === bodyScrollHeight) {
+      console.log('触底了')
+    }
+    console.log('windowHeight', scrolltop, bodyScrollHeight, windowHeight)
+  })
+```
+### 2、回到网页底部
+```javascript
+  window.scrollTo(0, document.documentElement.scrollHeight - document.documentElement.clientHeight);
+```
 # 既然大侠光临，不如留一手评论
 
 <Vssue title="Vssue Demo" />
