@@ -487,6 +487,7 @@
 ### 2、回到网页底部
 ```javascript
   window.scrollTo(0, document.documentElement.scrollHeight - document.documentElement.clientHeight);
+  // scrollTo(xpos,ypos)
 ```
 # 既然大侠光临，不如留一手评论
 
