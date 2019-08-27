@@ -32,6 +32,12 @@ AWC(AaronWangCong)，AWC是[汪聪个人门户网站](http://wangcong.wang/)的�
 * [js监听滚动及回到底部](../blog/JavaScript.md#js监听滚动及回到底部)
   * [1、滚动监听](../blog/JavaScript.md#_1、滚动监听)
   * [2、回到网页底部](../blog/JavaScript.md#_2、回到网页底部)
+* [JS监听Dom元素是否改变](../blog/JavaScript.md#JS监听Dom元素是否改变)
+  * [1、observer概述](../blog/JavaScript.md#_1、observer概述)
+  * [2、observer构造函数](../blog/JavaScript.md#_2、observer构造函数)
+  * [3、MutationObserver的实例方法](../blog/JavaScript.md#_3、MutationObserver的实例方法)
+  * [4、observer使用例子](../blog/JavaScript.md#_4、observer使用例子)
+  * [5、observer扩展](../blog/JavaScript.md#_5、observer扩展)
 ## Jquery
 * [文档就绪函数](../blog/Jquery.md#文档就绪函数)
   * [1、执行顺序ready](../blog/Jquery.md#1、执行顺序ready)

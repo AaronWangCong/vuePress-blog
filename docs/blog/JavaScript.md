@@ -2,6 +2,41 @@
 ::: tip
   `Javascript`是 Web 的编程语言。是前端的必备知识，微观到原生，大到各种框架的运用，所有现代的 HTML 页面都离不开它。
 :::
+## JS等待DOM渲染
+  ### 1、readyState判断dom是否加载完成
+  ```javascript
+    /**
+    * 监听dom是否加载完成
+    * loading  仍在加载。
+    * interactive  文档已被解析，"正在加载"状态结束，但是诸如图像，样式表和框架之类的子资源仍在加载。
+    * complete 文档和所有子资源已完成加载。表示 load 状态的事件即将被触发。
+    */
+    function onReady(fn){
+      var readyState = document.readyState;
+      if(readyState === 'interactive' || readyState === 'complete') {
+      fn()
+    }else{
+        window.addEventListener("DOMContentLoaded",fn);
+      }
+    }
+
+    onReady(function(){
+      alert('DOM fully loaded and parsed ')
+    })
+  ```
+  ### 2、onload判断dom加载完成
+  ```javascript
+    window.onload = function(){
+      alert('页面加载完成后，我被加载出来了！')
+    };
+  ```
+  ### 3、ready判断dom加载完成
+  ```javascript
+    document.querySelector(document).ready(function(){
+      alert("Hello")
+    })
+  ```
+
 ## 移动端及PC端
   ### 1、js判断环境为移动端或pc端
   ```javascript
@@ -35,9 +70,7 @@
     html.style.fontSize = width / 7.5 + "px";
     //1rem=100;
   ```
-
 ## JS的数据处理
-
   ### 1、filter过滤器
   * 简单讲filter就是一个数组过滤器，参数接收一个函数，数组的每一项经过函数过滤，返回一个符合过滤条件的新数组
   * 函数接收三个参数：
@@ -164,7 +197,6 @@
     console.log(num); //2.44
     console.log(typeof num); // number
   ```
-
 ## 网页的视频、音频播放
   ### 1、H5auto标签
   * 不具体说,vue封装组件,有空再详写,此组件还包括`cavans`律动效果
@@ -472,23 +504,93 @@
     </style>
   ```
 ## js监听滚动及回到底部
-### 1、滚动监听
-```javascript
-  let bodyScrollHeight = document.body.scrollHeight || document.documentElement.scrollHeight;
-  let windowHeight = document.documentElement.clientHeight || document.body.clientHeight;
-  window.addEventListener('scroll', function () {
-    let scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrolltop + windowHeight === bodyScrollHeight) {
-      console.log('触底了')
-    }
-    console.log('windowHeight', scrolltop, bodyScrollHeight, windowHeight)
-  })
-```
-### 2、回到网页底部
-```javascript
-  window.scrollTo(0, document.documentElement.scrollHeight - document.documentElement.clientHeight);
-  // scrollTo(xpos,ypos)
-```
+  ### 1、滚动监听
+  ```javascript
+    let bodyScrollHeight = document.body.scrollHeight || document.documentElement.scrollHeight;
+    let windowHeight = document.documentElement.clientHeight || document.body.clientHeight;
+    window.addEventListener('scroll', function () {
+      let scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrolltop + windowHeight === bodyScrollHeight) {
+        console.log('触底了')
+      }
+      console.log('windowHeight', scrolltop, bodyScrollHeight, windowHeight)
+    })
+  ```
+  ### 2、回到网页底部
+  ```javascript
+    window.scrollTo(0, document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    // scrollTo(xpos,ypos)
+  ```
+## JS监听Dom元素是否改变
+::: tip
+  完整使用请直接查看使用例子
+:::
+  ### 1、observer概述
+  * `Mutation Observer API` 用来监视 `DOM` 变动。`DOM` 的任何变动，比如节点的增减、属性的变动、文本内容的变动，这个 `API` 都可以得到通知。
+  * Mutation Observer 有以下特点。
+    * 它等待所有脚本任务完成后，才会运行（即异步触发方式）。
+    * 它把 `DOM` 变动记录封装成一个数组进行处理，而不是一条条个别处理 `DOM` 变动。
+    * 它既可以观察 `DOM` 的所有类型变动，也可以指定只观察某一类变动。
+  ### 2、observer构造函数
+  * 使用时，首先使用 `MutationObserver` 构造函数，新建一个观察器实例，同时指定这个实例的回调函数。
+  ```javascript
+    var observer = new MutationObserver(callback);
+  ```
+  * 上面代码中的回调函数，会在每次 `DOM` 变动后调用。该回调函数接受两个参数，第一个是变动数组，第二个是观察器实例，下面是一个例子。
+  ```javascript
+    var observer = new MutationObserver(function (mutations, observer) {
+      mutations.forEach(function(mutation) {
+        console.log(mutation);
+      });
+    });
+  ```
+  ### 3、MutationObserver的实例方法
+  * `observe` 方法用来启动监听，它接受两个参数。
+    * 第一个参数：所要观察的 `DOM` 节点
+    * 第二个参数：一个配置对象，指定所要观察的特定变动
+    ```javascript
+      var article = document.querySelector('article');
+      var  options = {
+        'childList': true,
+        'attributes':true
+      } ;
+      observer.observe(article, options);
+    ```
+    * 观察器所能观察的 `DOM` 变动类型（即上面代码的 `options` 对象），有以下几种。
+    ```javascript
+      var  options = {
+        childList: true,  /* 子节点的变动（指新增，删除或者更改）。*/
+        attributes: true, /* 属性的变动。*/
+        characterData: true, /*节点内容或节点文本的变动。*/
+        subtree: true,  /*布尔值，表示是否将该观察器应用于该节点的所有后代节点。*/
+        attributeOldValue: true,  /* 布尔值，表示观察attributes变动时，是否需要记录变动前的属性*/
+        characterDataOldValue: true, /* 布尔值，表示观察characterData变动时，是否需要记录变动前的值。*/
+        attributeFilter:['class','src'] /*数组，表示需要观察的特定属性（比如['class','src']）。*/
+      } ;
+    ```
+    * 对一个节点添加观察器，就像使用 `addEventListener` 方法一样，多次添加同一个观察器是无效的，回调函数依然只会触发一次。但是，如果指定不同的 `options` 对象，就会被当作两个不同的观察器。
+  ### 4、observer使用例子
+  * 下面的例子是观察新增的子节点。
+  ```javascript
+    var insertedNodes = [];
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        for (var i = 0; i < mutation.addedNodes.length; i++)
+          insertedNodes.push(mutation.addedNodes[i]);
+      })
+    });
+    observer.observe(document, { childList: true });
+    console.log(insertedNodes);
+  ```
+  ### 5、observer扩展
+  * `disconnect` 方法用来停止观察。调用该方法后，DOM 再发生变动，也不会触发观察器。
+  ```javascript
+    observer.disconnect();
+  ```
+  * ``takeRecords`` 方法用来清除变动记录，即不再处理未处理的变动。该方法返回变动记录的数组。
+  ```javascript
+    observer.takeRecords();
+  ```
 # 既然大侠光临，不如留一手评论
 
 <Vssue title="Vssue Demo" />
