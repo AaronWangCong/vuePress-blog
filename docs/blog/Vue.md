@@ -757,6 +757,79 @@
       }
     </script>
   ```
+## vue中纯前端实现导出Excel表格
+  ### 1、纯前端导出Excel功能背景
+  * 因为业务需求，需要前端来导出一些字段为Excel，后台不提供导出接口
+  ### 2、纯前端导出Excel安装依赖
+  * 首先安装插件依赖
+  ```sh
+    cnpm install -S file-saver xlsx
+    cnpm install -D script-loader
+  ```
+  ### 3、纯前端导出Excel下载js文件
+  * 这里需要下载两个js文件
+  * [https://gitee.com/BenDanXianSheng/excel_relyon.git](https://gitee.com/BenDanXianSheng/excel_relyon.git)
+  ![name](../.vuepress/public/images/vue01.png '描述')
+
+  ### 4、纯前端导出Excel设置全局
+  * 在项目目录下的build下的 webpack.base.conf.js这个webpack的配置文件中的resolve的alias中加入
+  ```javascript
+    resolve: {
+      extensions: ['.js', '.vue', '.json'],
+      alias: {
+        'vue$': 'vue/dist/vue.esm.js',
+        '@': resolve('src'),
+        'vendor':path.resolve(__dirname,'../src/assets/vendor'),
+      }
+    },
+  ```
+  ### 5、纯前端导出Excel功能代码
+  ```vue
+    <template>
+      <div class=" ">
+        <el-button type="success" @click="export2Excel">导出</el-button>
+      </div>
+    </template>
+    <script>
+    export default {
+      name: '',
+      components: {},
+      props: {},
+      data () {
+        return {}
+      },
+      computed: {},
+      created () {},
+      mounted () {},
+      methods: {
+        export2Excel() {
+          require.ensure([], () => {
+            const { export_json_to_excel } = require('vendor/Export2Excel');
+            const tHeader =
+              [
+              '编号', '标题', '作者','回顾', '时间'    
+              ];
+            const filterVal =
+              ['id', 'title','author','pageviews','display_time'];  
+              const list =
+              [
+                {id: 1, title: 2, author: 3, pageviews: 4, display_time: 5},
+                {id: 6, title: 7, author: 8, pageviews: 9, display_time: 10},
+                {id: 11, title: 12, author: 13, pageviews: 14, display_time: 15},
+              ];
+            const data = this.formatJson(filterVal, list);       
+            export_json_to_excel(tHeader, data, '**账单报表');
+          })
+        },
+        formatJson(filterVal, jsonData) {
+          return jsonData.map(v => filterVal.map(j => v[j]))
+        }
+      }
+    }
+    </script>
+    <style lang="scss">
+    </style>
+  ```
 # 既然大侠光临，不如留一手评论
 
 <Vssue title="Vssue Demo" />

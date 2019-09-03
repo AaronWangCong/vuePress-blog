@@ -15,6 +15,10 @@ AWC(AaronWangCong)，AWC是[汪聪个人门户网站](http://wangcong.wang/)的�
 :::
 
 ## JavaScript
+* [JS等待DOM渲染](../blog/JavaScript.md#JS等待DOM渲染)
+  * [1、readyState判断dom是否加载完成](../blog/JavaScript.md#_1、readyState判断dom是否加载完成)
+  * [2、onload判断dom加载完成](../blog/JavaScript.md#_2、onload判断dom加载完成)
+  * [3、ready判断dom加载完成](../blog/JavaScript.md#_3、ready判断dom加载完成)
 * [移动端及PC端](../blog/JavaScript.md#移动端及PC端)
   * [1、js判断环境为移动端或pc端](../blog/JavaScript.md#_1、js判断环境为移动端或pc端)
   * [2、js判断是否为微信端](../blog/JavaScript.md#_2、js判断是否为微信端)
