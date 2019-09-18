@@ -106,7 +106,10 @@ AWC(AaronWangCong)，AWC是[汪聪个人门户网站](http://wangcong.wang/)的�
   * [4、vue-quill-editor使用](../blog/Vue.md#_4、vue-quill-editor使用)
 
 ## Nuxt.js
-* [快速开始创建项目](../blog/Nuxt.md#安装)
+* [快速开始创建项目](../blog/Nuxt.md#_1、快速创建项目)
+* [打包部署](../blog/Nuxt.md#_2、打包部署)
+* [pm2服务器守护](../blog/Nuxt.md#_3、pm2服务器守护)
+* [ngnix代理访问](../blog/Nuxt.md#_4、ngnix代理访问)
 
 ## MarkDown基本使用
 

@@ -100,7 +100,7 @@
   * `pm2` linux环境安装请看Linux目录或者戳 [pm2安装](../blog/Linux.md#PM2进程守护安装)直达。
   * `cd` 到linux项目根目录下运行
   ```sh
-    pm2 start npm --name 'nuxtDemo' --run start
+    pm2 start npm --name 'nuxtDemo' -- run start
   ```
   * 执行 `pm2 list` 查看项目是否成功，注意观察 `restart` 项中数字是否增加，增加表示项目自动重启了，证明没有启动成功。
   ![name](../.vuepress/public/images/nuxt01.png '描述')
