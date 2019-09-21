@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>eship客户系统国际化开发说明及规范 | AWC技术博文</title>
+    <meta name="description" content="AWC技术博文是汪聪个人门户网站的一个独立子站，包括html、CSS、vue、nuxt、javascript、小程序、pm2等技术知识，致力于开源一份简洁标准的前端技术博文网站。">
+    <link rel="icon" href="/photo.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.297e5126.css" as="style"><link rel="preload" href="/assets/js/app.28ae1b0f.js" as="script"><link rel="preload" href="/assets/js/2.de7c13b9.js" as="script"><link rel="preload" href="/assets/js/6.8a38380e.js" as="script"><link rel="prefetch" href="/assets/js/10.ab94077d.js"><link rel="prefetch" href="/assets/js/11.90d072d7.js"><link rel="prefetch" href="/assets/js/12.3f892f64.js"><link rel="prefetch" href="/assets/js/13.d14ce233.js"><link rel="prefetch" href="/assets/js/14.5c460365.js"><link rel="prefetch" href="/assets/js/15.099b30ae.js"><link rel="prefetch" href="/assets/js/16.f6499703.js"><link rel="prefetch" href="/assets/js/17.51968306.js"><link rel="prefetch" href="/assets/js/18.4f34ffb4.js"><link rel="prefetch" href="/assets/js/19.9cf9cc98.js"><link rel="prefetch" href="/assets/js/20.30376f71.js"><link rel="prefetch" href="/assets/js/21.55c6e018.js"><link rel="prefetch" href="/assets/js/22.92d69aa1.js"><link rel="prefetch" href="/assets/js/23.6d2606d8.js"><link rel="prefetch" href="/assets/js/24.70222dbd.js"><link rel="prefetch" href="/assets/js/3.44597d55.js"><link rel="prefetch" href="/assets/js/4.8dad6f26.js"><link rel="prefetch" href="/assets/js/5.32d1f218.js"><link rel="prefetch" href="/assets/js/7.0ed2cdf7.js"><link rel="prefetch" href="/assets/js/8.6893bae2.js"><link rel="prefetch" href="/assets/js/9.0193bb51.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.297e5126.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">AWC技术博文</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link">博客</a></div><div class="nav-item"><a href="http://blog.wangcong.wang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人门户
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/AaronWangCong/vuePress-blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link">博客</a></div><div class="nav-item"><a href="http://blog.wangcong.wang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人门户
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/AaronWangCong/vuePress-blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/note/eshipI18n.html" class="active sidebar-link">eship国际化开发规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/eshipI18n.html#eship客户系统国际化开发说明及规范" class="sidebar-link">eship客户系统国际化开发说明及规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/eshipI18n.html#国际化说明" class="sidebar-link">国际化说明</a></li><li class="sidebar-sub-header"><a href="/note/eshipI18n.html#获取代码" class="sidebar-link">获取代码</a></li><li class="sidebar-sub-header"><a href="/note/eshipI18n.html#目录结构" class="sidebar-link">目录结构</a></li><li class="sidebar-sub-header"><a href="/note/eshipI18n.html#书写规范及命名规范" class="sidebar-link">书写规范及命名规范</a></li><li class="sidebar-sub-header"><a href="/note/eshipI18n.html#i18n在vue及vuex中的使用方法" class="sidebar-link">i18n在vue及vuex中的使用方法</a></li><li class="sidebar-sub-header"><a href="/note/eshipI18n.html#结语" class="sidebar-link">结语</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="eship客户系统国际化开发说明及规范"><a href="#eship客户系统国际化开发说明及规范" aria-hidden="true" class="header-anchor">#</a> eship客户系统国际化开发说明及规范</h2> <h3 id="国际化说明"><a href="#国际化说明" aria-hidden="true" class="header-anchor">#</a> 国际化说明</h3> <ul><li>客户中心系统国际化采用 <code>vue-i18n</code> 完成</li> <li>提取对应文本为语言文件字段并嵌入对应字段</li> <li>提取文本需要规范化整理，便于后续维护</li> <li>首页 <code>home</code> 已经韩语化，格式可以参考</li></ul> <h3 id="获取代码"><a href="#获取代码" aria-hidden="true" class="header-anchor">#</a> 获取代码</h3> <ul><li>为避免开发人员错误提交代码到其它分支建议重新克隆项目到本地单独文件夹，仅作为翻译开发使用(建议)</li> <li>克隆客户端代码到本地</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>    <span class="token function">git</span> clone http://192.168.8.169:8088/eship/vue-customer-center.git
+</code></pre></div><ul><li>拉取分支 <code>developerEn</code> 代码</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>    <span class="token function">git</span> checkout -b developerEn origin/developerEn
+</code></pre></div><ul><li>如果不想重新拉取项目，想要一个项目开发可直接拉取分支（不建议）</li> <li>进入本地客户中心系统代码目录下执行</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>    <span class="token function">git</span> checkout -b developerEn origin/developerEn
+</code></pre></div><ul><li>查看当前分支及切换分支命令</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>    // 查看本地所有分支
+    <span class="token function">git</span> branch -a
+    
+    // 切换到对应分支
+    <span class="token function">git</span> checkout 分支名称
+</code></pre></div><h3 id="目录结构"><a href="#目录结构" aria-hidden="true" class="header-anchor">#</a> 目录结构</h3> <ul><li>语言文件在 <code>src &gt; assets &gt; locales &gt; zh</code> 目录</li> <li>语言文件按照路由页面分类，一个页面对应一个js文件</li> <li>页面文件已经建立，找到对应js文件进行提取和嵌入</li> <li>其他目录不需要新增，提取嵌入完成后由前端整合成其他语言
+<img src="/assets/img/note_eshipI18n_01.6582f732.png" alt="name" title="描述"> <img src="/assets/img/note_eshipI18n_02.f3fd5f3c.png" alt="name" title="描述"></li></ul> <h3 id="书写规范及命名规范"><a href="#书写规范及命名规范" aria-hidden="true" class="header-anchor">#</a> 书写规范及命名规范</h3> <ul><li>语言js文件层级至多3层，建议两层</li> <li>按照模块化命名及分层，一个部分一个层级为基准</li> <li>首页标题模块 <code>pageTile</code> <ul><li>其中 <code>pageTile</code> 算一级命名，名称必须为驼峰且有意义</li> <li>其中 <code>tab1</code> <code>tab2</code> <code>tab3</code> 为二级命名，此时没有子级可以按类别及序号命名</li></ul></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 注意翻译的时候只需更改引号内内容即可</span>
+<span class="token comment">// 使用写法路径 $t('home.pageTile.tab1')</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    pageTile<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        tab1<span class="token punctuation">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span>
+        tab2<span class="token punctuation">:</span> <span class="token string">'用户中心'</span><span class="token punctuation">,</span>
+        tab3<span class="token punctuation">:</span> <span class="token string">'操作台'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>首页余额模块 <code>balance</code> <ul><li>其中 <code>balance</code> 算一级命名，<code>title</code> 为当前模块的标题</li> <li>其中 <code>btn1</code> <code>btn2</code> 为当前模块按钮命名</li></ul></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 注意翻译的时候只需更改引号内内容即可</span>
+<span class="token comment">// 使用写法路径 $t('home.pageTile.tab1')</span>
+<span class="token comment">// 使用写法路径 $t('home.balance.title')</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    pageTile<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        tab1<span class="token punctuation">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span>
+        tab2<span class="token punctuation">:</span> <span class="token string">'用户中心'</span><span class="token punctuation">,</span>
+        tab3<span class="token punctuation">:</span> <span class="token string">'操作台'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    balance<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        title<span class="token punctuation">:</span> <span class="token string">'当前账户余额'</span><span class="token punctuation">,</span>
+        title2<span class="token punctuation">:</span> <span class="token string">'当前未付金额'</span><span class="token punctuation">,</span>
+        btn1<span class="token punctuation">:</span> <span class="token string">'账单明细'</span><span class="token punctuation">,</span>
+        btn2<span class="token punctuation">:</span> <span class="token string">'账户充值'</span><span class="token punctuation">,</span>
+        totalConsumption<span class="token punctuation">:</span> <span class="token string">'总消费'</span><span class="token punctuation">,</span>
+        monthBill<span class="token punctuation">:</span> <span class="token string">'本月消费'</span><span class="token punctuation">,</span>
+        coupon<span class="token punctuation">:</span> <span class="token string">'优惠券'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>有时候内容过多，需增加二级模块,例如 <code>createSingleOrder.js</code> <ul><li>这时候会有三级字段，那么对应的二级标题也必须驼峰且有意义</li> <li>建议能缩减就不要用三级字段，这样应用到代码中时会有四级，显得太长。</li> <li>比如这里可以缩减为下面内容</li> <li>当然，有时候实在没法合并也可以这样写，但最多限制三级字段</li></ul></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 注意翻译的时候只需更改引号内内容即可</span>
+<span class="token comment">// 使用写法路径 $t('createSingleOrder.title')</span>
+<span class="token comment">// 使用写法路径 $t('createSingleOrder.addressInfo.title')</span>
+<span class="token comment">// 使用写法路径 $t('createSingleOrder.addressInfo.deliveryAddress.title')</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'单件下单'</span>
+    addressInfo<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        title<span class="token punctuation">:</span> <span class="token string">'地址信息'</span><span class="token punctuation">,</span>
+        deliveryAddress<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            title<span class="token punctuation">:</span> <span class="token string">'收货人信息'</span><span class="token punctuation">,</span>
+            name<span class="token punctuation">:</span> <span class="token string">'收货人'</span><span class="token punctuation">,</span>
+            company<span class="token punctuation">:</span> <span class="token string">'公司'</span><span class="token punctuation">,</span>
+            country<span class="token punctuation">:</span> <span class="token string">'国家'</span><span class="token punctuation">,</span>
+            <span class="token operator">...</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        senderAddress<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            title<span class="token punctuation">:</span> <span class="token string">'发件人信息'</span><span class="token punctuation">,</span>
+            name<span class="token punctuation">:</span> <span class="token string">'发件人'</span><span class="token punctuation">,</span>
+            company<span class="token punctuation">:</span> <span class="token string">'公司'</span><span class="token punctuation">,</span>
+            country<span class="token punctuation">:</span> <span class="token string">'国家'</span><span class="token punctuation">,</span>
+            <span class="token operator">...</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    takeAwayType<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        title<span class="token punctuation">:</span> <span class="token string">'提货方式'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'单件下单'</span>
+    addressInfo<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        title<span class="token punctuation">:</span> <span class="token string">'地址信息'</span><span class="token punctuation">,</span>
+        deliveryAddressTitle<span class="token punctuation">:</span> <span class="token string">'收货人信息'</span><span class="token punctuation">,</span>
+        senderAddressTitle<span class="token punctuation">:</span> <span class="token string">'发件人信息'</span><span class="token punctuation">,</span>
+        name<span class="token punctuation">:</span> <span class="token string">'发件人'</span><span class="token punctuation">,</span>
+        company<span class="token punctuation">:</span> <span class="token string">'公司'</span><span class="token punctuation">,</span>
+        country<span class="token punctuation">:</span> <span class="token string">'国家'</span><span class="token punctuation">,</span>
+        <span class="token operator">...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    takeAwayType<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        title<span class="token punctuation">:</span> <span class="token string">'提货方式'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="i18n在vue及vuex中的使用方法"><a href="#i18n在vue及vuex中的使用方法" aria-hidden="true" class="header-anchor">#</a> i18n在vue及vuex中的使用方法</h3> <ul><li>例如 <code>login.loginTitle</code> 对应中文为 <code>'登录'</code></li> <li>在页面外部js中使用需要引入 <code>i18n</code></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>    <span class="token keyword">import</span> i18n <span class="token keyword">from</span> <span class="token string">'./i18n'</span>
+    
+    <span class="token comment">// 使用</span>
+    <span class="token keyword">let</span> locale <span class="token operator">=</span> i18n<span class="token punctuation">.</span>_vm<span class="token punctuation">.</span>locale
+</code></pre></div><ul><li>在vue文件的html中使用</li></ul> <div class="language-vue extra-class"><pre class="language-vue"><code>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>{{ $t('login.loginTitle') }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+            // <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>登录<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>在vue文件的script中使用,需要增加 <code>this</code>,然后直接替换中文字符串</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>    <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+        <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">{</span>
+              random<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'login.loginTitle'</span><span class="token punctuation">)</span>
+              <span class="token comment">// random: '登录'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token function">handleIconClick</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">let</span> title <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'login.loginTitle'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'呀'</span>
+                <span class="token comment">// let title = '登录' + '呀'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><ul><li>在vue文件的vuex的 <code>actions.js</code> 中使用 需要引入</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>    <span class="token keyword">import</span> <span class="token punctuation">{</span> Notification <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'element-ui'</span>
+    <span class="token keyword">import</span> i18n <span class="token keyword">from</span> <span class="token string">'../../lib/i18n'</span>
+    <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+        <span class="token keyword">async</span> <span class="token function">registA</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>state<span class="token punctuation">,</span> commit<span class="token punctuation">,</span> dispatch<span class="token punctuation">}</span><span class="token punctuation">,</span> params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">regist</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>flag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              router<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token punctuation">{</span>path<span class="token punctuation">:</span> <span class="token string">&quot;/login&quot;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token function">Notification</span><span class="token punctuation">(</span><span class="token punctuation">{</span> title<span class="token punctuation">:</span> i18n<span class="token punctuation">.</span><span class="token function">t</span><span class="token punctuation">(</span><span class="token string">'common.tipsTitle'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> i18n<span class="token punctuation">.</span><span class="token function">t</span><span class="token punctuation">(</span><span class="token string">'common.success'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> type<span class="token punctuation">:</span> <span class="token string">'success'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+              <span class="token function">Notification</span><span class="token punctuation">(</span><span class="token punctuation">{</span> title<span class="token punctuation">:</span> i18n<span class="token punctuation">.</span><span class="token function">t</span><span class="token punctuation">(</span><span class="token string">'common.tipsTitle'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span> type<span class="token punctuation">:</span> <span class="token string">'error'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h3 id="结语"><a href="#结语" aria-hidden="true" class="header-anchor">#</a> 结语</h3> <ul><li>因为多人开发存在差异，有问题及时交流。</li> <li>开发必须规范，命名必须有意义，便于维护。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.28ae1b0f.js" defer></script><script src="/assets/js/2.de7c13b9.js" defer></script><script src="/assets/js/6.8a38380e.js" defer></script>
+  </body>
+</html>

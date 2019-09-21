@@ -36,6 +36,9 @@ module.exports = {
         ['Linux', '十四、Linux'],
         ['deploy', '十五、部署']
       ],
+      '/note/': [
+        ['eshipI18n', 'eship国际化开发规范']
+      ],
       '/': [
         '',        /* / */
       ]
